@@ -1,0 +1,21 @@
+With typescript :
+
+install all the dependencies :
+
+npm i express dotenv mongoose cors cookie-parser jsonwebtoken bcryptjs
+npm i -D nodemon typescript ts-node @types/node @types/express @types/cors @types/cookie-parser @types/jsonwebtoken @types/bcryptjs
+
+misc dependencies (not always needed) :
+npm i socket.io cloudinary (they do not need type dependencies)
+
+Configure Typescript using the following command :
+
+npx tsc --init
+
+Configure package.json :
+
+"scripts": {
+	"build": "tsc",
+	"start": "node index.js",
+	"dev": "nodemon index.js"
+}

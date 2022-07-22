@@ -1,0 +1,54 @@
+With javascript :
+
+npx create-next-app@latest
+# or
+yarn create next-app
+
+With typescript :
+
+npx create-next-app@latest --typescript
+# or
+yarn create next-app --typescript
+
+Add _document.js file:
+
+import { Html, Head, Main, NextScript } from 'next/document'
+
+export default function Document() {
+  return (
+    <Html>
+      <Head />
+      <body>
+        <Main />
+        <NextScript />
+      </body>
+    </Html>
+  )
+}
+
+Add tailwind:
+
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+
+Configure tailwind.config.js:
+
+module.exports = {
+  content: [
+    "./pages/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+
+Configure global css file:
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+add @layer components to define global styles
+to add your own defined classes in tailwind, add them in tailwind.config.js under - themes > extend

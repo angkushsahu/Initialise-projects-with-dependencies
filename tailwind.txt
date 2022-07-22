@@ -1,0 +1,52 @@
+For react :
+
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+
+Configure tailwind.config.js :
+
+module.exports = {
+  content: [
+    "./src/**/*.{js,jsx,ts,tsx}",
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+
+Configure global css file :
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+add @layer components to define global styles
+to add your own defined classes in tailwind, add them in tailwind.config.js under - themes > extend
+
+For next :
+
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+
+Configure tailwind.config.js:
+
+module.exports = {
+  content: [
+    "./pages/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+
+Configure global css file:
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+add @layer components to define global styles
+to add your own defined classes in tailwind, add them in tailwind.config.js under - themes > extend
