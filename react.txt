@@ -3,11 +3,15 @@ With javascript :
 npx create-react-app .
 yarn create react-app .
 
+npm i react-router-dom
+
 With typescript :
 
 npx create-react-app . --template typescript
 or
 yarn create react-app . --template typescript
+
+npm i react-router-dom
 
 Add tailwind :
 
