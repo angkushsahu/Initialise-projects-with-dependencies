@@ -8,4 +8,16 @@ This will save your time from surfing the browser every time before installing a
 
 ## Get a copy
 
-Download it from the given option above or clone it to your own machine
+Download zip file from the by clicking on the code button (in green color) above and then clicking on `Download Zip` or clone it to your own machine
+
+## About the Developer
+
+### Hey, this is Angkush
+
+Contact Me from [here](https://angkush.vercel.app/contact)
+
+Link to [portfolio](https://angkush.vercel.app)
+
+Link to [github](https://github.com/angkushsahu)
+
+Connect with me on [Linked-in](https://www.linkedin.com/in/angkush-sahu-0409311bb/)
