@@ -1,5 +1,8 @@
 With typescript :
 
+initiate project :
+npm init -y
+
 install all the dependencies :
 
 npm i express dotenv mongoose cors cookie-parser jsonwebtoken bcryptjs
