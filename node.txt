@@ -17,8 +17,18 @@ npx tsc --init
 
 Configure package.json :
 
+// for javascript
+
 "scripts": {
 	"build": "tsc",
 	"start": "node index.js",
 	"dev": "nodemon index.js"
+}
+
+// for typescript
+
+"scripts": {
+	"build": "tsc",
+	"start": "node index.ts",
+	"dev": "nodemon index.ts"
 }

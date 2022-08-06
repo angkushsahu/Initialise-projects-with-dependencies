@@ -13,6 +13,27 @@ yarn create react-app . --template typescript
 
 npm i react-router-dom
 
+for image import in react-typescript :
+add a file to the root src file with name global.d.ts and add these below
+add all the extensions that you are going to use as images
+
+declare module "*.jpg" {
+	export default "" as string;
+}
+declare module "*.jfif" {
+	export default "" as string;
+}
+declare module "*.png" {
+	export default "" as string;
+}
+declare module "*.svg" {
+	export default "" as string;
+}
+declare module "*.gif" {
+	export default "" as string;
+}
+
+
 Add tailwind :
 
 npm install -D tailwindcss postcss autoprefixer
