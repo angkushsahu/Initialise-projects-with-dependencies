@@ -35,15 +35,16 @@ Configure package.json :
 For tsconfig file : 
 
 {
-  "compilerOptions": {
-    "target": "es2016",
-    "module": "commonjs",
-    "rootDir": "./server",
-    "outDir": "./build",
-    "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
-    "strict": true,
-    "skipLibCheck": true
-  },
-	"include": ["server/**/*"]
+   "compilerOptions": {
+      "target": "es2016",
+      "module": "commonjs",
+      "rootDir": "./src",
+      "outDir": "./dist",
+      "esModuleInterop": true,
+      "forceConsistentCasingInFileNames": true,
+      "strict": true,
+      "skipLibCheck": true
+   },
+   "include": ["src/**/*"]
 }
+
