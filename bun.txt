@@ -1,0 +1,30 @@
+bun init
+
+bun add express dotenv mongoose cors cookie-parser jsonwebtoken bcryptjs nodemailer
+bun add -d @types/node @types/express @types/cors @types/cookie-parser @types/jsonwebtoken @types/nodemailer @types/bcryptjs
+
+-- tsconfig.json --
+{
+   "compilerOptions": {
+      "target": "ES2016",
+      "module": "commonjs",
+      "rootDir": "./src",
+      "outDir": "./dist",
+      "esModuleInterop": true,
+      "forceConsistentCasingInFileNames": true,
+      "strict": true,
+      "skipLibCheck": true,
+      "baseUrl": "./src",
+      "paths": {
+         "@/*": ["*"]
+      }
+   },
+   "include": ["src/**/*"]
+}
+
+-- package.json --
+"scripts": {
+    "dev": "bun run --watch src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js"
+  }
